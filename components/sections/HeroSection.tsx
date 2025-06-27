@@ -1,0 +1,31 @@
+// components/sections/HeroSection.tsx
+import Link from "next/link";
+import { Button } from "../../components/ui/button";
+
+export default function HeroSection() {
+    return (
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-slate-50">
+            <div className="container px-4 md:px-6">
+                <div className="flex flex-col items-center space-y-6 text-center">
+                    <div className="space-y-3">
+                        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+                            The Revolution in Gardening is Here
+                        </h1>
+                        <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl">
+                           Engineered for durability and precision. Reclaim your garden with ease and efficiency.
+                        </p>
+                    </div>
+                    {/* THIS IS THE FIX: Properly styled buttons with spacing */}
+                    <div className="flex flex-col sm:flex-row items-center gap-4">
+                        <Button asChild size="lg">
+                            <Link href="/products">Shop Now</Link>
+                        </Button>
+                        <Button asChild variant="outline" size="lg">
+                            <Link href="/comparison">See Comparison</Link>
+                        </Button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
