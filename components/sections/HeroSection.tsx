@@ -1,6 +1,6 @@
 // components/sections/HeroSection.tsx
 import Link from "next/link";
-import { Button } from "../../components/ui/button";
+import { Button } from "../../components/ui/button"; // Corrected the import path
 
 export default function HeroSection() {
     return (
@@ -15,11 +15,17 @@ export default function HeroSection() {
                            Engineered for durability and precision. Reclaim your garden with ease and efficiency.
                         </p>
                     </div>
-                    {/* THIS IS THE FIX: Properly styled buttons with spacing */}
                     <div className="flex flex-col sm:flex-row items-center gap-4">
-                        <Button asChild size="lg">
+                        {/* 
+                          THIS IS THE FIX:
+                          We are telling this specific button to use the 'bg-success' class,
+                          which is mapped to your green color.
+                        */}
+                        <Button asChild size="lg" className="bg-success hover:bg-success/90">
                             <Link href="/products">Shop Now</Link>
                         </Button>
+                        
+                        {/* This button stays as a neutral outline, which is good design */}
                         <Button asChild variant="outline" size="lg">
                             <Link href="/comparison">See Comparison</Link>
                         </Button>

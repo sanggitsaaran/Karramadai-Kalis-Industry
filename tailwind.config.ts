@@ -3,7 +3,6 @@ import type { Config } from "tailwindcss"
 
 const config: Config = {
   darkMode: ["class"],
-  // This content path is CORRECT and will fix the sync warnings.
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -16,8 +15,6 @@ const config: Config = {
         "2xl": "1400px",
       },
     },
-    // THIS 'extend' BLOCK IS THE FIX FOR YOUR CssSyntaxError.
-    // It defines the custom classes like 'border-border', 'bg-background', etc.
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -52,6 +49,11 @@ const config: Config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        // THIS IS THE NEWLY ADDED BLOCK FOR YOUR GREEN COLOR
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
         },
       },
       borderRadius: {

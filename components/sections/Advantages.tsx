@@ -24,7 +24,7 @@ export default function Advantages() {
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
             <div className="container px-4 md:px-6">
                 <h2 className="text-3xl font-bold tracking-tighter text-center sm:text-5xl mb-12">
-                    The Weeder Co. Advantage
+                    The Kalis Power Weeder ,  Advantage
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     {advantages.map((adv, index) => (

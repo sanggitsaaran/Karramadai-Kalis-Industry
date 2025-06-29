@@ -30,7 +30,7 @@ export default function Navbar() {
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
           <Mountain className="h-6 w-6 text-green-700" />
-          <span className="font-bold text-lg">Weeder Co.</span>
+          <span className="font-bold text-lg">Kalis Power Weeder</span>
         </Link>
 
         {/* DESKTOP NAVIGATION */}
@@ -75,7 +75,7 @@ export default function Navbar() {
                 <nav className="grid gap-6 text-lg font-medium mt-10">
                   <Link href="/" className="flex items-center gap-2 mb-4" onClick={() => setMobileMenuOpen(false)}>
                       <Mountain className="h-6 w-6 text-green-700" />
-                      <span className="font-bold">Weeder Co.</span>
+                      <span className="font-bold">Kalis Power Weeder</span>
                   </Link>
                   {navLinks.map((link) => (
                     <Link
