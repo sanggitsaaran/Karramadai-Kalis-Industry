@@ -27,7 +27,7 @@ export default function HeroSection() {
                         
                         {/* This button stays as a neutral outline, which is good design */}
                         <Button asChild variant="outline" size="lg">
-                            <Link href="/comparison">See Comparison</Link>
+                            <Link href="/videos">See Videos</Link>
                         </Button>
                     </div>
                 </div>

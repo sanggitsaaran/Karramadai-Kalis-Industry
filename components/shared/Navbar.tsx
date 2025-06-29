@@ -13,7 +13,7 @@ import { Menu, Mountain, ShoppingCart } from "lucide-react";
 // You can manage your links in one place like this
 const navLinks = [
     { href: "/products", label: "Products" },
-    { href: "/comparison", label: "Comparison" },
+    { href: "/videos", label: "Videos" },
     { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact" },
 ];
