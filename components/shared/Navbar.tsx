@@ -29,7 +29,7 @@ export default function Navbar() {
         
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
-          <Mountain className="h-6 w-6 text-green-700" />
+          <img src="/images/logo.jpg" alt="Example" />
           <span className="font-bold text-lg">Kalis Power Weeder</span>
         </Link>
 
